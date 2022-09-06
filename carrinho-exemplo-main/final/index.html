@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Carrinho</title>
+  </head>
+  <body>
+    <nav class="navbar bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" style="color: white">E-commerce</a>
+        <a href="carrinho.html">
+          <i class="fa-solid fa-cart-shopping carrinho">
+            <span class="badge" id="numero_carrinho">0</span>
+          </i>
+        </a>
+      </div>
+    </nav>
+    <div class="produtos">
+      <div class="card-produto">
+        <img class="imagem-produto" src="./imagens/imagem1.jpg" />
+        <div class="descricao-produto">
+          <h5>Celular 1</h5>
+          <p>R$ 100,00</p>
+          <button
+            class="btn botao-comprar"
+            onclick="adicionaProduto('Celular 1', 'imagem1.jpg', '100' )"
+          >
+            Adicionar ao carrinho
+          </button>
+        </div>
+      </div>
+      <div class="card-produto">
+        <img class="imagem-produto" src="./imagens/imagem1.jpg" />
+        <div class="descricao-produto">
+          <h5>Celular 2</h5>
+          <p>R$ 100,00</p>
+          <button
+            class="btn botao-comprar"
+            onclick="adicionaProduto('Celular 2', 'imagem1.jpg', '100' )"
+          >
+            Adicionar ao carrinho
+          </button>
+        </div>
+      </div>
+      <div class="card-produto">
+        <img class="imagem-produto" src="./imagens/imagem1.jpg" />
+        <div class="descricao-produto">
+          <h5>Celular 3</h5>
+          <p>R$ 100,00</p>
+          <button
+            class="btn botao-comprar"
+            onclick="adicionaProduto('Celular 3', 'imagem1.jpg', '100' )"
+          >
+            Adicionar ao carrinho
+          </button>
+        </div>
+      </div>
+      <div class="card-produto">
+        <img class="imagem-produto" src="./imagens/imagem1.jpg" />
+        <div class="descricao-produto">
+          <h5>Celular 4</h5>
+          <p>R$ 100,00</p>
+          <button
+            class="btn botao-comprar"
+            onclick="adicionaProduto('Celular 4', 'imagem1.jpg', '100' )"
+          >
+            Adicionar ao carrinho
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
