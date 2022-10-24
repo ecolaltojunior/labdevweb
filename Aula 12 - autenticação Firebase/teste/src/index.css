@@ -4,6 +4,9 @@ body {
   margin: 0;
   font-family: "Montserrat", sans-serif;
 }
+h1{
+  text-align: center;
+}
 
 input::placeholder, textarea::placeholder{
   font-family: "Montserrat", sans-serif;

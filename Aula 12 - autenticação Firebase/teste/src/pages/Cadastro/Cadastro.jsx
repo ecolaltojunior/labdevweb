@@ -1,8 +1,8 @@
 import React from 'react'
-
+import styles from './Cadastro.module.css'
 const cadastro = () => {
   return (
-    <div>
+    <div className={styles.cadastro}>
         <h2>Cadastre-se</h2>
         <form>
             <label>
