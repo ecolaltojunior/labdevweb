@@ -2,13 +2,15 @@ import React from 'react'
 import styles from './Cadastro.module.css'
 import { useState, useEffect } from 'react'
 import { useAuthentication } from '../../hooks/useAuthentication'
+//import {useNavigate} from 'react-router-dom'
 const Cadastro = () => {
     const [displayName, setDisplayName] = useState("")
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
     const [confirmPassword, setConfirmPassword] = useState("")
     const [error, setError] = useState("")
-
+    const[success, setSuccess] = useState("")
+    //const navigate = useNavigate()
     const { createUser, error: authError, loading } = useAuthentication()
 
     const handleSubmit = async (e) => {
@@ -27,7 +29,15 @@ const Cadastro = () => {
 
        const res = await createUser(user)
 
-        console.log(res)
+        setSuccess(res)
+
+        setDisplayName("")
+        setEmail("")
+        setPassword("")
+        setConfirmPassword("")
+//
+        //alert("Usuário cadastrado")
+        //navigate('/perfil')
     }
 
     useEffect(()=>{
@@ -61,6 +71,7 @@ const Cadastro = () => {
             {!loading && <button className='btn' type="submit">Cadastrar</button>}
             {loading && (<button className='btn' disabled>Aguarde...</button>)}
             {error && <p className='error'>{error}</p>}
+            {success && <p className='success'>Usuário cadastrado com sucesso</p>}
         </form>
     </div>
   )
