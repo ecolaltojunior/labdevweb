@@ -36,7 +36,7 @@ function App() {
       <h1>LABORATÓRIO DE DESENVOLVIMENTO WEB</h1>
         <div className='container'>
         <Routes>
-        <Route path='/perfil' element={<Perfil />} /> 
+        <Route path='/perfil' element={user ? <Perfil /> : <Navigate to='/' />} /> 
         <Route path='/' element={!user ? <Home /> : <Navigate to='/perfil' />} />
         <Route path ='/cadastro' element={<Cadastro />} />
         </Routes>
