@@ -31,7 +31,7 @@ function App() {
         <h1>Laboratório de Desenvolvimento Web</h1>
         <main className='container'>
         <Routes>
-          <Route path='/perfil' element={<Perfil />} />
+        <Route path='/perfil' element={user ? <Perfil /> : <Navigate to='/' />} /> 
           <Route path='/' element={!user ? <Home /> : <Navigate to='/perfil'/>}  />
           <Route path='/cadastro' element={<Cadastro />} />
         </Routes>

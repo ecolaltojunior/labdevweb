@@ -8,6 +8,7 @@ const Cadastro = () => {
     const [password, setPassword] = useState("")
     const [confirmPassword, setConfirmPassword] = useState("")
     const [error, setError] = useState("")
+    const [success, setSuccess] = useState("")
 
     const { createUser, error: authError, loading } = useAuthentication()
 
@@ -27,7 +28,12 @@ const Cadastro = () => {
 
        const res = await createUser(user)
 
-        console.log(res)
+        setSuccess(res)
+
+        setDisplayName("")
+        setEmail("")
+        setPassword("")
+        setConfirmPassword("")
     }
 
     useEffect(()=>{
@@ -60,6 +66,9 @@ const Cadastro = () => {
             {!loading && <button className='btn'>Cadastrar</button>}
             {loading && <button className='btn' disabled>Aguarde...</button>}
             {error && <p className='error'>{error}</p>}
+            {success && <p className='success'>Usuário cadastrado com sucesso!</p>}
+
+            
         </form>
     </div>
   )
