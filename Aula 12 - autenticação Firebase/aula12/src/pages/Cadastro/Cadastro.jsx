@@ -28,18 +28,20 @@ const Cadastro = () => {
 
        const res = await createUser(user)
 
-        setSuccess(res)
+        if(setSuccess(res)){
 
         setDisplayName("")
         setEmail("")
         setPassword("")
         setConfirmPassword("")
+        }
     }
 
     useEffect(()=>{
 
         if(authError){
             setError(authError)
+                        
         }
 
     },[authError])
