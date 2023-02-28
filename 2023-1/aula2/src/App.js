@@ -1,10 +1,12 @@
 import './App.css';
-
+import hello_world from './assets/image/hello_world.png'
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Hello World!</h1>
+       <img src={hello_world} className="App-logo" alt="hello world, olá mundo" />
+       <h1>Aula 02 - Introdução ao React</h1>
+       <p>Laboratório de Desenvolvimento Web</p>
       </header>
     </div>
   );
