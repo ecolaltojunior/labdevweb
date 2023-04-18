@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './Home.module.css'
-
+import { Link } from 'react-router-dom'
 const Home = () => {
   return (
     <div className={styles.home}>
@@ -13,7 +13,7 @@ const Home = () => {
                 <span>Senha</span>
                 <input type="password" name="password" id="password" />
             </label>
-            <button type="submit" className='btn'>Entrar</button>
+            <button type="submit" className='btn'>Entrar</button> <Link to='/cadastro' className='btn'>Cadastre-se</Link>
         </form>
         
     </div>
