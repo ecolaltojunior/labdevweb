@@ -3,6 +3,7 @@ import styles from './Home.module.css'
 import { Link } from 'react-router-dom'
 const Home = () => {
   return (
+    <main className='container'>
     <div className={styles.home}>
         <form>
             <label>
@@ -17,6 +18,7 @@ const Home = () => {
         </form>
         
     </div>
+    </main>
   )
 }
 

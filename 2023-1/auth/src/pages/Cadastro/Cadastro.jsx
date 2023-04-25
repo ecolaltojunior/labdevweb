@@ -2,6 +2,7 @@ import React from 'react'
 import styles from './Cadastro.module.css'
 const Cadastro = () => {
   return (
+    <main className='container'>
     <div className={styles.cadastro}>
       <form>
         <label>
@@ -24,6 +25,7 @@ const Cadastro = () => {
       </form>
 
     </div>
+    </main>
   )
 }
 
