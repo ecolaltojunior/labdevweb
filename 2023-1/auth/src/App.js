@@ -5,9 +5,13 @@ import Cadastro from './pages/Cadastro/Cadastro';
 import Perfil from './pages/Perfil/Perfil';
 import Footer from './components/Footer/Footer';
 import NavBar from './components/NavBar/NavBar';
+import { useState } from 'react';
+import {AuthProvider} from './context/AuthContext'
 function App() {
+  const [user, setUser] = useState(undefined)
   return (
     <>
+    <AuthProvider value={{user}}>
       <BrowserRouter>
       <NavBar />
         <Routes>
@@ -17,6 +21,7 @@ function App() {
         </Routes>
       </BrowserRouter>
       <Footer />
+      </AuthProvider>
     </>
   );
 }
