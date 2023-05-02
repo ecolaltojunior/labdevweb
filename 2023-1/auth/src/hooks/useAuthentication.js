@@ -58,4 +58,15 @@ export const useAuthentication = () =>{
 
         }
     }
+
+    useEffect (()=>{
+        return() => setCancelled(true)
+      },[]) 
+
+    return{
+        auth,
+        loading,
+        error,
+        createUser
+    }
 }
