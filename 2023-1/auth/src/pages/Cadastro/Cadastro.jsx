@@ -12,28 +12,31 @@ const Cadastro = () => {
   
   const {createUser, error: authError, loading } = useAuthentication()
 
-  const handleSubmit = async (e) =>{
+  const handleSubmit = async (e) => {
     e.preventDefault()
 
     setError("")
     const user = {
-      displayName,
-      email,
-      password
+        displayName,
+        email,
+        password
+    }
+    if(password !== confirmPassword){
+        setError("As senhas precisam ser iguais")
+        return
     }
 
-    if(password != confirmPassword){
-      setError("As senhas precisam ser iguais")
-      return
+   const res = await createUser(user)
+
+    if(res){
+    setSuccess(res)
+    setDisplayName("")
+    setEmail("")
+    setPassword("")
+    setConfirmPassword("")
     }
-    const res = await createUser (user)
-    if(setSuccess(res)){
-      setDisplayName("")
-      setEmail("")
-      setPassword("")
-      setConfirmPassword("")
-    }
-  }
+   
+}
   useEffect(()=>{
       if(authError){
         setError(authError)
