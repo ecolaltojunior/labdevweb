@@ -63,7 +63,10 @@ export const useAuthentication = () =>{
     const logout = () =>{
         checkIfIsCancelled()
         signOut(auth)
+       
     }
+     
+
 //login
     const login = async (data) =>{
         checkIfIsCancelled()
