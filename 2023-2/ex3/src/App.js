@@ -1,9 +1,10 @@
-import Form from './pages/Form';
+import FormLogin from "./pages/FormLogin";
+
 
 
 function App() {
   return (
-    <Form />
+  <FormLogin />
   );
 }
 

@@ -1,0 +1,17 @@
+.formulario{
+    width: 500px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.text{
+    display: block;
+    margin-top: 10px;
+}
+
+.btn{
+    width: 80px;
+    background-color: blueviolet;
+    color: aliceblue;
+    padding: 10px;
+}
