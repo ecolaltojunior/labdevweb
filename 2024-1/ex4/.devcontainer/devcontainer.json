@@ -32,7 +32,7 @@
 	 "vscode": {
 		"extensions": [
 		  "dbaeumer.vscode-eslint",
-		  "esbenp.prettier-vscode",
+		  "esbenp.prettier-vscode"
 		]
 	  }
 
