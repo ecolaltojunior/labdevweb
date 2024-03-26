@@ -9,9 +9,9 @@
 	// "features": {},
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	"forwardPorts": [5173],
+	"forwardPorts": [5174],
 	"portsAttributes": {
-		"5173": {
+		"5174": {
 			"label": "ex4",
 			"onAutoForward": "openPreview"
 		}
