@@ -1,0 +1,13 @@
+main{
+  
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center; 
+}
+
+.img{
+    width: 70%;
+    height: auto;
+}
+
