@@ -1,0 +1,7 @@
+main{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+}
