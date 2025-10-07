@@ -5,3 +5,15 @@ main{
     align-items: center;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
 }
+
+form{
+    width: 500px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+input, textarea{
+    display: block;
+    margin-top: 10px;
+}
+
