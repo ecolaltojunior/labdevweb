@@ -1,8 +1,11 @@
 import React from 'react'
-
+import logoreact from '../assets/react.svg'
+import './Home.css'
 const Home = () => {
   return (
-    <div>Home</div>
+    <main>
+        <img src={logoreact} className='img' alt="logo react js" />
+    </main>
   )
 }
 
